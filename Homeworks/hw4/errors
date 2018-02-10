@@ -1,0 +1,80 @@
+==21006== Memcheck, a memory error detector
+==21006== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==21006== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==21006== Command: ./songtest
+==21006== Parent PID: 19049
+==21006== 
+==21006== 
+==21006== HEAP SUMMARY:
+==21006==     in use at exit: 465 bytes in 14 blocks
+==21006==   total heap usage: 60 allocs, 46 frees, 2,121 bytes allocated
+==21006== 
+==21006== 24 bytes in 1 blocks are definitely lost in loss record 3 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x400E1B: newSong (song.c:22)
+==21006==    by 0x4007C8: main (songtest.c:43)
+==21006== 
+==21006== 24 bytes in 1 blocks are definitely lost in loss record 4 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x400E1B: newSong (song.c:22)
+==21006==    by 0x400990: main (songtest.c:76)
+==21006== 
+==21006== 24 bytes in 1 blocks are definitely lost in loss record 5 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401086: songCopy (song.c:99)
+==21006==    by 0x4009DE: main (songtest.c:82)
+==21006== 
+==21006== 24 bytes in 1 blocks are definitely lost in loss record 6 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x400E1B: newSong (song.c:22)
+==21006==    by 0x400AC2: main (songtest.c:107)
+==21006== 
+==21006== 39 bytes in 1 blocks are definitely lost in loss record 7 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x400834: main (songtest.c:52)
+==21006== 
+==21006== 45 bytes in 1 blocks are definitely lost in loss record 8 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x4009B8: main (songtest.c:79)
+==21006== 
+==21006== 45 bytes in 1 blocks are definitely lost in loss record 9 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x4009EE: main (songtest.c:83)
+==21006== 
+==21006== 45 bytes in 1 blocks are definitely lost in loss record 10 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x400A20: main (songtest.c:86)
+==21006== 
+==21006== 45 bytes in 1 blocks are definitely lost in loss record 11 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x400A6D: main (songtest.c:94)
+==21006== 
+==21006== 47 bytes in 1 blocks are definitely lost in loss record 12 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x400AD2: main (songtest.c:108)
+==21006== 
+==21006== 50 bytes in 1 blocks are definitely lost in loss record 13 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401208: songToString (song.c:144)
+==21006==    by 0x40086D: main (songtest.c:56)
+==21006== 
+==21006== 53 (24 direct, 29 indirect) bytes in 1 blocks are definitely lost in loss record 14 of 14
+==21006==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21006==    by 0x401086: songCopy (song.c:99)
+==21006==    by 0x400A46: main (songtest.c:91)
+==21006== 
+==21006== LEAK SUMMARY:
+==21006==    definitely lost: 436 bytes in 12 blocks
+==21006==    indirectly lost: 29 bytes in 2 blocks
+==21006==      possibly lost: 0 bytes in 0 blocks
+==21006==    still reachable: 0 bytes in 0 blocks
+==21006==         suppressed: 0 bytes in 0 blocks
+==21006== 
+==21006== For counts of detected and suppressed errors, rerun with: -v
+==21006== ERROR SUMMARY: 12 errors from 12 contexts (suppressed: 0 from 0)

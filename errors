@@ -1,0 +1,90 @@
+==16479== Memcheck, a memory error detector
+==16479== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==16479== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==16479== Command: ./songtest
+==16479== Parent PID: 16405
+==16479== 
+==16479== 
+==16479== HEAP SUMMARY:
+==16479==     in use at exit: 459 bytes in 14 blocks
+==16479==   total heap usage: 60 allocs, 46 frees, 2,121 bytes allocated
+==16479== 
+==16479== 11 bytes in 1 blocks are definitely lost in loss record 1 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x400F11: songGetArtist (song.c:53)
+==16479==    by 0x4008B3: main (songtest.c:61)
+==16479== 
+==16479== 12 bytes in 1 blocks are definitely lost in loss record 2 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x400F61: songGetTitle (song.c:61)
+==16479==    by 0x4008C3: main (songtest.c:62)
+==16479== 
+==16479== 24 bytes in 1 blocks are definitely lost in loss record 3 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x400E0F: newSong (song.c:22)
+==16479==    by 0x4007C8: main (songtest.c:43)
+==16479== 
+==16479== 24 bytes in 1 blocks are definitely lost in loss record 4 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x400E0F: newSong (song.c:22)
+==16479==    by 0x400978: main (songtest.c:74)
+==16479== 
+==16479== 24 bytes in 1 blocks are definitely lost in loss record 5 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x40107A: songCopy (song.c:99)
+==16479==    by 0x4009C6: main (songtest.c:80)
+==16479== 
+==16479== 24 bytes in 1 blocks are definitely lost in loss record 6 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x40107A: songCopy (song.c:99)
+==16479==    by 0x400A2E: main (songtest.c:89)
+==16479== 
+==16479== 24 bytes in 1 blocks are definitely lost in loss record 7 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x400E0F: newSong (song.c:22)
+==16479==    by 0x400AC2: main (songtest.c:105)
+==16479== 
+==16479== 39 bytes in 1 blocks are definitely lost in loss record 8 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x400834: main (songtest.c:52)
+==16479== 
+==16479== 45 bytes in 1 blocks are definitely lost in loss record 9 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x4009A0: main (songtest.c:77)
+==16479== 
+==16479== 45 bytes in 1 blocks are definitely lost in loss record 10 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x4009D6: main (songtest.c:81)
+==16479== 
+==16479== 45 bytes in 1 blocks are definitely lost in loss record 11 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x400A08: main (songtest.c:84)
+==16479== 
+==16479== 45 bytes in 1 blocks are definitely lost in loss record 12 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x400A55: main (songtest.c:92)
+==16479== 
+==16479== 47 bytes in 1 blocks are definitely lost in loss record 13 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x400AD2: main (songtest.c:106)
+==16479== 
+==16479== 50 bytes in 1 blocks are definitely lost in loss record 14 of 14
+==16479==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==16479==    by 0x4011FC: songToString (song.c:144)
+==16479==    by 0x40086D: main (songtest.c:56)
+==16479== 
+==16479== LEAK SUMMARY:
+==16479==    definitely lost: 459 bytes in 14 blocks
+==16479==    indirectly lost: 0 bytes in 0 blocks
+==16479==      possibly lost: 0 bytes in 0 blocks
+==16479==    still reachable: 0 bytes in 0 blocks
+==16479==         suppressed: 0 bytes in 0 blocks
+==16479== 
+==16479== For counts of detected and suppressed errors, rerun with: -v
+==16479== ERROR SUMMARY: 14 errors from 14 contexts (suppressed: 0 from 0)
